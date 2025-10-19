@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "cors": "^2.8.5",
+    "csv-parse": "^6.1.0",
+    "dotenv": "^17.2.3",
+    "echarts": "^6.0.0",
+    "express": "^5.1.0",
+    "glob": "^11.0.3",
+    "pdfmake": "^0.2.20",
+    "puppeteer": "^24.25.0"
+  },
+  "name": "sss_backend_service",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
