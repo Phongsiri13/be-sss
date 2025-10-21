@@ -1,5 +1,5 @@
 // routes/waste.js
-import express from "express";
+import { Router } from "express";
 import { fetchWastedRowsCached } from "../src/services/wastedFetcherCached.js";
 import {
   monthKey,
@@ -8,7 +8,7 @@ import {
   filterRowsByMonths,
 } from "../src/helpers/dateFilter.js";
 
-const router = express.Router();
+const router = Router();
 
 const PEOPLE_IN_BUILDING = 372; // ค่าคงที่ที่ SSS กำหนด
 const UNIT_COST_WASTED = 2.28; // ✅ ค่าเฉลี่ยจากอัตราค่ากำจัดขยะของ กทม./เทศบาล

@@ -1,4 +1,4 @@
-import express from "express";
+import {Router} from "express";
 import { fetchWastedRowsCached } from "../src/services/wastedFetcherCached.js";
 import {
   monthKey,
@@ -8,7 +8,7 @@ import {
 } from "../src/helpers/dateFilter.js";
 
 
-const router = express.Router();
+const router = Router();
 
 /**
  * @route GET /iaq/current
@@ -75,7 +75,6 @@ router.get("/iaq/current", async (req, res) => {
       .json({ error: `Server error: ${String(err.message || err)}` });
   }
 });
-
 
 
 export default router;

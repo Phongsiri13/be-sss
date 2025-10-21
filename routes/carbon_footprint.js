@@ -1,4 +1,4 @@
-import express from "express";
+import {Router} from "express";
 import { fetchWastedRowsCached } from "../src/services/wastedFetcherCached.js";
 import {
   monthKey,
@@ -8,7 +8,7 @@ import {
   monthNamesTH
 } from "../src/helpers/dateFilter.js";
 
-const router = express.Router();
+const router = Router();
 
 
 router.get("/carbonfootpint-floors", async (req, res) => {
